@@ -1,8 +1,5 @@
 # SOLID
 
-<!-- TODO: replace the placeholders below with the final paper title, authors, venue and links. -->
-**SOLID: &lt;full paper title&gt;**
-
 This is the official PyTorch implementation of SOLID, which learns ordinal slide representations for computational
 pathology. SOLID aligns slide embeddings from a multiple-instance learning (MIL) aggregator with **ordered, text-derived
 class anchors**. Its objective has three parts:
@@ -141,9 +138,5 @@ loss = lam_ce * F.cross_entropy(logits, y) + (1 - lam_ce) * rep
 python -m pytest tests
 ```
 
-## Acknowledgements
-Patch features are extracted with [TRIDENT](https://github.com/mahmoodlab/TRIDENT). The anchors use the text encoder
-of [CONCH](https://github.com/mahmoodlab/CONCH). The aggregator follows gated attention MIL
-([Ilse et al., 2018](https://arxiv.org/abs/1802.04712)).
 
 
